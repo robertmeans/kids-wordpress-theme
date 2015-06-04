@@ -34,6 +34,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Alignments
 # Clearings
 # Widgets
+# Header
 # Content
     ## Posts and pages
 	## Asides
@@ -42,6 +43,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Media
 	## Captions
 	## Galleries
+
 --------------------------------------------------------------*/
 @import "variables-site/variables-site";
 @import "mixins/mixins-master";
@@ -91,6 +93,11 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 --------------------------------------------------------------*/
 @import "site/secondary/widgets";
 
+/* --------------------
+# Header 
+---------------------*/
+@import "site/primary/header";
+
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
@@ -105,3 +112,5 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Media
 --------------------------------------------------------------*/
 @import "media/media";
+
+@import "layout/content-sidebar";

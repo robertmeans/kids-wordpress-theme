@@ -1,3 +1,9 @@
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
+	font-family: $font__heading;
+	color: $color__heading-main;
+}
+h1.site-title {
+	font-family: Aclonica, sans-serif;
+	font-weight: 700;
 }

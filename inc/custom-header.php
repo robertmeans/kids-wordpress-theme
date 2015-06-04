@@ -24,10 +24,10 @@
 function stanton_and_meredith_custom_header_setup() {
 	add_theme_support( 'custom-header', apply_filters( 'stanton_and_meredith_custom_header_args', array(
 		'default-image'          => '',
-		'default-text-color'     => '000000',
-		'width'                  => 1000,
-		'height'                 => 250,
-		'flex-height'            => true,
+		'default-text-color'     => 'ffffff',
+		'width'                  => 1280,
+		'height'                 => 300,
+		'flex-height'            => false,
 		'wp-head-callback'       => 'stanton_and_meredith_header_style',
 		'admin-head-callback'    => 'stanton_and_meredith_admin_header_style',
 		'admin-preview-callback' => 'stanton_and_meredith_admin_header_image',
@@ -57,8 +57,7 @@ function stanton_and_meredith_header_style() {
 		// Has the text been hidden?
 		if ( 'blank' == $header_text_color ) :
 	?>
-		.site-title,
-		.site-description {
+		.site-branding {
 			position: absolute;
 			clip: rect(1px, 1px, 1px, 1px);
 		}
@@ -98,6 +97,10 @@ function stanton_and_meredith_admin_header_style() {
 		#desc {
 		}
 		#headimg img {
+		}
+		.site-branding {
+	    position: absolute;
+	    clip: rect(1px, 1px, 1px, 1px);
 		}
 	</style>
 <?php

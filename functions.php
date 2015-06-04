@@ -70,10 +70,10 @@ function stanton_and_meredith_setup() {
 	) );
 
 	// Set up the WordPress core custom background feature.
-	add_theme_support( 'custom-background', apply_filters( 'stanton_and_meredith_custom_background_args', array(
-		'default-color' => 'ffffff',
-		'default-image' => '',
-	) ) );
+	// add_theme_support( 'custom-background', apply_filters( 'stanton_and_meredith_custom_background_args', array(
+	// 	'default-color' => 'ffffff',
+	// 	'default-image' => '',
+	// ) ) );
 }
 endif; // stanton_and_meredith_setup
 add_action( 'after_setup_theme', 'stanton_and_meredith_setup' );
@@ -114,9 +114,11 @@ add_action( 'widgets_init', 'stanton_and_meredith_widgets_init' );
 function stanton_and_meredith_scripts() {
 	wp_enqueue_style( 'stanton-and-meredith-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'stanton-and-meredith-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
+	wp_enqueue_style( 'stanton-and-meredith-google-fonts', 'http://fonts.googleapis.com/css?family=Lato:100,400,700,900,400italic,900italic|PT+Serif:400,700,400italic,700italic|Aclonica:400,700' );
 
-	wp_enqueue_script( 'stanton-and-meredith-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
+	wp_enqueue_style( 'stanton-and-meredith-fontawesome', 'http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' );
+
+	wp_enqueue_script( 'stanton-and-meredith-js', get_template_directory_uri() . '/js/scripts.js', array('jquery'), '20150519', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
