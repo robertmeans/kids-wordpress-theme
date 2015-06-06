@@ -48,6 +48,40 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Final Touches - Accents - Details
 
 --------------------------------------------------------------*/
+/* --------- Original Styles --------- */
+/* --------- Stanton's CSS --------- 
+// Primary Menu 
+$color__main-nav: #ee750a;
+$color__main-nav-hover: #0b0b9a;
+$color__main-nav-current-page-bkg: #fff;
+$color__main-nav-current-page-txt: #313131;
+$color__main-nav-current-page-ancestor: #0b0b9a;
+$color__main-nav-dropdown: #0000ff;
+$color__main-nav-dropdown-hover: #0b0b9a;
+$color__dropdown-current-page-ancestor-bkg: #0b0b9a;
+$color__dropdown-current-page-ancestor-txt: #fff;
+// small screen nav
+$color__menu-toggle: #ee750a;
+$color__menu-toggle-border: #ee750a;
+$color__menu-toggle-hover: #0b0b9a;
+$color__small-menu-item: #0000ff;
+$color__small-menu-hover: #0b0b9a;
+$color__small-menu-current-page-bkg: #0b0b9a;
+$color__small-menu-current-page-txt: #fff;
+$color__small-menu-current-page-parent-bkg: inherit;
+$color__small-menu-current-page-parent-txt: inherit;
+$color__small-menu-item-ancestor-hover: #0b0b9a;
+$color__small-menu-current-page-ancestor: #ee750a;
+
+// search
+$color__search-box: #0b0b9a;
+$color__search-toggle-hover: #0b0b9a;
+
+// widgets
+$color__widget-title: #ee750a;
+$color__widget-title-border-bottom-color: #ee750a;
+$color__widget-link: #0b0b9a;
+*/
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
@@ -533,7 +567,6 @@ a:hover, a:active {
   float: left;
   padding: 0;
   background: #4d4d4d;
-  background: #4d4d4d;
 }
 .main-navigation ul ul ul {
   left: -999em;
@@ -548,7 +581,6 @@ a:hover, a:active {
 .main-navigation ul ul a:hover,
 .main-navigation ul ul a.focus {
   background: #313131;
-  background: #303030;
 }
 .main-navigation ul li:hover > ul,
 .main-navigation ul li.focus > ul {
@@ -561,7 +593,6 @@ a:hover, a:active {
 .main-navigation li:hover > a, .main-navigation li.focus > a {
   color: #fff;
   color: white;
-  background: #4d4d4d;
   background: #4d4d4d;
 }
 .main-navigation a {
@@ -578,22 +609,18 @@ a:hover, a:active {
 .main-navigation .current-menu-item > a,
 .main-navigation .current_page_item > a:hover,
 .main-navigation .current-menu-item > a:hover {
-  background: white;
+  background: #fff;
   color: #313131;
-  color: #303030;
 }
 
 .main-navigation .current_page_ancestor {
-  background: #4d4d4d;
   background: #4d4d4d;
 }
 
 .main-navigation ul ul .current_page_parent,
 .main-navigation .current_page_parent .current_page_item > a {
   color: #fff;
-  color: white;
   background: #313131;
-  background: #303030;
 }
 
 /* custom styles to keep menu centered */
@@ -675,7 +702,6 @@ a:hover, a:active {
 
   .main-navigation li:hover > a {
     background: #313131;
-    background: #303030;
   }
 
   .main-navigation ul ul,
@@ -686,7 +712,6 @@ a:hover, a:active {
     display: block;
     float: none;
     background: #313131;
-    background: #303030;
   }
 
   .main-navigation ul ul li:hover > ul, .main-navigation ul ul li:focus > ul {
@@ -699,7 +724,6 @@ a:hover, a:active {
 
   .main-navigation ul a:hover,
   .main-navigation ul ul a:hover {
-    background: #4d4d4d;
     background: #4d4d4d;
   }
 
@@ -717,8 +741,6 @@ a:hover, a:active {
   .main-navigation .current_page_item li:hover,
   .main-navigation .current_page_parent .current_page_item > a {
     color: #fff;
-    color: white;
-    background: #4d4d4d;
     background: #4d4d4d;
   }
 }
@@ -842,7 +864,6 @@ input[type="search"] {
 .search-box {
   padding: 0.5em;
   background: #4d4d4d;
-  background: #4d4d4d;
 }
 
 .search-box .search-field {
@@ -873,7 +894,6 @@ input[type="search"] {
 
 .search-toggle:hover,
 .search-toggle.active {
-  background: #4d4d4d;
   background: #4d4d4d;
 }
 
@@ -984,8 +1004,8 @@ input[type="search"] {
 
 .widget-title {
   margin-bottom: 1em;
-  font-size: 16px;
   font-size: 1.6rem;
+  color: #313131;
   border-bottom: 2px solid #757575;
 }
 
@@ -1558,10 +1578,6 @@ object {
   }
 }
 /* # Custom */
-.widget-title {
-  font-size: 1.4rem;
-}
-
 /*--------------------------------------------------------------
 6.0 Accessibility
 --------------------------------------------------------------*/
@@ -1783,5 +1799,3 @@ tbody tr > td[class="pad"] {
 #fancybox-content, #fancybox-wrap {
   box-sizing: content-box;
 }
-
-/* # Final Touches - Accents - Details */

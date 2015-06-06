@@ -11,14 +11,14 @@
 }
 .widget-title {
 	margin-bottom: 1em;
-	font-size: 16px;
 	font-size: 1.6rem;
-	border-bottom: 2px solid #757575;
+    color: $color__widget-title;
+	border-bottom: 2px solid $color__widget-title-border-bottom-color;
 }
 
 .widget a {
 	font-weight: 700;
-	color: #000;
+	color: $color__widget-link;
 }
 .widget ul,
 .widget ol {

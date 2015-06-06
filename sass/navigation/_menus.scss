@@ -9,7 +9,7 @@
     clear: both;
     font-family: 'Lato', sans-serif;
     text-transform: uppercase;
-    background: #313131;
+    background: $color__main-nav;
 
 	ul {
 		display: none;
@@ -30,8 +30,7 @@
 		    display: none;
 		    float: left;
 		    padding: 0;
-		    background: #4d4d4d;
-		    background: hsl(0, 0%, 30%);
+		    background: $color__main-nav-dropdown;
 
 			ul {
 				left: -999em;
@@ -55,8 +54,7 @@
 
 			a:hover,
 			a.focus {
-				background: #313131;
-    			background: hsl(0, 0%, 19%);
+				background: $color__main-nav-dropdown-hover;
 			}
 		}
 
@@ -73,8 +71,7 @@
 		&.focus > a { // main nav hover
 			color: #fff;
 		    color: hsl(0, 0%, 100%);
-		    background: #4d4d4d;
-		    background: hsl(0, 0%, 30%);
+		    background: $color__main-nav-hover;
 		}
 	}
 	a {
@@ -94,22 +91,18 @@
 .main-navigation .current-menu-item > a,
 .main-navigation .current_page_item > a:hover,
 .main-navigation .current-menu-item > a:hover {
-    background: white;
-    color: #313131;
-    color: hsl(0, 0%, 19%);
+    background: $color__main-nav-current-page-bkg;
+    color: $color__main-nav-current-page-txt;
 }
 
 .main-navigation .current_page_ancestor {
-    background: #4d4d4d;
-    background: hsl(0, 0%, 30%);
+    background: $color__main-nav-current-page-ancestor;
 }
 
 .main-navigation ul ul .current_page_parent,
 .main-navigation .current_page_parent .current_page_item > a {
-    color: #fff;
-    color: hsl(0, 0%, 100%);
-    background: #313131;
-    background: hsl(0, 0%, 19%);
+    color: $color__dropdown-current-page-ancestor-txt;
+    background: $color__dropdown-current-page-ancestor-bkg;
 }
 
 /* custom styles to keep menu centered */
@@ -167,14 +160,14 @@
 	        text-transform: uppercase;
 			// reset button properties to mute
 			// the button look
-			background: #313131;
-		    border-color: #313131;
+			background: $color__menu-toggle;
+		    border-color: $color__menu-toggle-border;
 		    border-radius: 0;
 		    border: none;
 		    box-shadow: none;
 		    text-shadow: none;
 		    &:hover {
-		    	background: #4d4d4d;
+		    	background: $color__menu-toggle-hover;
 			    border-radius: none;
 			    border: none;
 			    font-weight: normal;
@@ -211,8 +204,7 @@
 	}
 
 	.main-navigation li:hover > a {
-		background: #313131;
-		background: hsl(0, 0%, 19%);
+		background: $color__small-menu-item-ancestor-hover;
 	}
 	
 	.main-navigation ul ul,
@@ -222,8 +214,7 @@
 		left: 0;
 		display: block;
 		float: none;
-		background: #313131;
-		background: hsl(0, 0%, 19%);
+		background: $color__small-menu-item;
 	}
 	
 	.main-navigation ul ul li {
@@ -237,25 +228,24 @@
 
 	.main-navigation ul a:hover,
 	.main-navigation ul ul a:hover {
-		background: #4d4d4d;
-		background: hsl(0, 0%, 30%);
+		background: $color__small-menu-hover;
 	}
 
-	.main-navigation .current_page_ancestor { background: inherit; }
+	.main-navigation .current_page_ancestor { 
+		background: $color__small-menu-current-page-ancestor; 
+	}
 
 	.main-navigation ul ul .current_page_parent {
-		color: inherit;
-		background: inherit;
+		color: $color__small-menu-current-page-parent-txt;
+		background: $color__small-menu-current-page-parent-bkg;
 	}
 
 	.main-navigation .current_page_item > a,
 	.main-navigation .current_page_item > a:hover,
 	.main-navigation .current_page_item li:hover,
 	.main-navigation .current_page_parent .current_page_item > a  {
-		color: #fff;
-		color: hsl(0, 0%, 100%);
-		background: #4d4d4d;
-		background: hsl(0, 0%, 30%);    
+		color: $color__small-menu-current-page-txt;
+		background: $color__small-menu-current-page-bkg;    
 	}
 }
 
