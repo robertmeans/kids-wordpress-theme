@@ -43,6 +43,7 @@ function stanton_and_meredith_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => esc_html__( 'Primary Menu', 'stanton-and-meredith' ),
+		'social' => esc_html__('Social Menu', 'stanton-and-meredith'),
 	) );
 
 	/*
@@ -99,6 +100,17 @@ function stanton_and_meredith_widgets_init() {
 	register_sidebar( array(
 		'name'          => esc_html__( 'Sidebar', 'stanton-and-meredith' ),
 		'id'            => 'sidebar-1',
+		'description'   => '',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h1 class="widget-title">',
+		'after_title'   => '</h1>',
+	) );
+
+	register_sidebar( array(
+		'name'          => esc_html__( 'Footer Widgets', 'stanton-and-meredith' ),
+		'description'   => esc_html__( 'Footer widgets area appears in the footer of the site.', 'stanton-and-meredith' ),
+		'id'            => 'sidebar-2',
 		'description'   => '',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',

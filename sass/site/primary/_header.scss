@@ -1,34 +1,40 @@
 .site-branding {
-    padding: 2rem 0;
+    padding: 0;
     text-align: center;
     background: #2c86ba;
     background: hsl(202, 62%, 45%);
 }
-
 .site-title {
+    display: inline;
+    padding-right: 10px;
+    padding-bottom: 0px;
     font-weight: 700;
-    font-size: 40px;
-    font-size: 4.5rem;
-    // text-transform: uppercase;
-    line-height: normal;
-    padding-bottom: 1rem;
-    margin-bottom: 0;
+    font-size: 70px;
+    line-height: 0px;
+    margin-bottom: 0px;
+    text-shadow: 2px 2px 4px #3e3e3e;
 }
-
 .site-description {
-    font-weight: 100;
-    font-size: 20px;
-    font-size: 2rem;
-    margin-top: 0;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+    line-height: .8em;
+    text-shadow: 2px 2px 4px #3e3e3e;
 }
                     
 .title-box {
-    width: 600px;
-    max-width: 75%;
-    padding: 0.5rem 1rem;
-    margin: 0 auto;
-    border: solid 1px #fff;
-    border: solid 1px hsla(0, 0%, 100%, .3);
+    position: absolute;
+    z-index: 10000;
+    text-align: right;
+    width: 100%;
+    max-width: 1280px;
+    margin-bottom: -0.06em;
+    padding-bottom: 0;
+    padding-right: .5em;
+    bottom: 0;
+    right: 0;
 }
                     
 .site-branding a { 
@@ -46,11 +52,15 @@
     .site-branding { 
         padding: 0; 
     }
-    
+    .site-title {
+        font-size: 50px;
+    }
+    .site-description {
+        font-size: 20px;
+    }
     .title-box {
         max-width: 100%;
         margin: 0;
-        padding: 2rem;
         border: none;
     }
 }
@@ -60,8 +70,10 @@
     margin: 0 auto;
 }
 .header-background-image {
+    position: relative;
     width: 100%;
     max-width: 1280px;
+    height: 300px;
     background: no-repeat center;
     background-size: cover!important;
     -moz-background-size: cover!important;
@@ -69,6 +81,6 @@
     margin: 0 auto;
 }
 
-.header-background-image .title-box {
-    background: rgba(#fff, .3);
-}
+// .header-background-image .title-box {
+//     background: rgba(#fff, .3);
+// }

@@ -40,7 +40,7 @@ masonry-settings
  */
 
 jQuery(document).ready(function($){
-    var breakpoint = 930;
+    var breakpoint = 720;
     var sf = $('ul.nav-menu');
 	
     if($(document).width() >= breakpoint){

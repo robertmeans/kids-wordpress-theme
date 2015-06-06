@@ -35,6 +35,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Clearings
 # Widgets
 # Header
+# Footer
 # Content
     ## Posts and pages
 	## Asides
@@ -43,6 +44,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Media
 	## Captions
 	## Galleries
+# Sidebar
+# Custom
+# Final Touches - Accents - Details
 
 --------------------------------------------------------------*/
 @import "variables-site/variables-site";
@@ -97,6 +101,11 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Header 
 ---------------------*/
 @import "site/primary/header";
+ 
+/*
+# Footer
+*/
+@import "site/primary/footer";
 
 /*--------------------------------------------------------------
 # Content
@@ -114,3 +123,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "media/media";
 
 @import "layout/content-sidebar";
+
+/* # Custom */
+@import "custom";
+
+/* # Final Touches - Accents - Details */
+// @import "final";
