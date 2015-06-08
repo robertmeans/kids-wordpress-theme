@@ -19,6 +19,10 @@
 .widget a {
 	font-weight: 700;
 	color: $color__widget-link;
+    text-decoration: underline;
+    &:hover {
+        text-decoration: none;
+    }
 }
 .widget ul,
 .widget ol {

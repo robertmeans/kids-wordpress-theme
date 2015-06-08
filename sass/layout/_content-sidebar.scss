@@ -1,18 +1,15 @@
 .site-content {
     padding-bottom: 2em;
-    background: #b2b2b2 url(_images/pattern.svg) repeat;
+    // background: #b2b2b2 url(_images/pattern.svg) repeat;
+    background: #fff;
     width: 100%;
     max-width: 1232px;
     margin: 0 auto;
 }
+.single .site-content,
 .page .site-content {
     padding-bottom: 2em;
-    // background: #b2b2b2 url(images/pattern.svg) repeat;
     background: #fff;
-}
-.single .site-content { 
-    background: #fff; 
-    background: hsl(0, 0%, 100%);
 }
 
 .site-content .widget-area {
@@ -37,9 +34,9 @@
 .comments-area,
 .paging-navigation {
 	position: relative;
-	max-width: 580px;
-	max-width: 58rem;
-	padding: 0 4rem;
+	max-width: 900px; // 900 + 380 = 1280
+	// max-width: 58rem;
+	padding: 0 1rem;
 	margin: 0 auto;
 }
 
@@ -56,7 +53,7 @@
 	.post-navitation,
 	.comments-area,
 	.paging-navigation { // this causes h scroll bar if left at 2rem for left & right padding. changed it to 3rem. now h scroll appears at 345px in Chrome - ?!
-		padding: 0 3rem;
+		padding: 0 1rem;
 	}
 	.entry-content p,
 	.entry-content ul,
@@ -69,7 +66,7 @@
 .post,
 .page-header {
 	margin-right: 0;
-	padding-top: 1em;
+	// padding-top: 1em;
 	padding-bottom: 2em;
 	padding-left: 0;
 	padding-right: 0;
@@ -83,7 +80,6 @@
 		margin-right: auto;
 	}
 }
-
 .index-box {
 	position: relative;
     max-width: 580px;
@@ -143,4 +139,5 @@
 		float: none;
 		margin: 1em auto 0 auto;
 	}
+
 }

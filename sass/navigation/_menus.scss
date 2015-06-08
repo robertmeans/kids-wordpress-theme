@@ -252,6 +252,16 @@
 .comment-navigation,
 .posts-navigation,
 .post-navigation {
+	position: relative;
+	max-width: 900px;
+	padding: 0 2rem;
+	margin: 0 auto;
+	a {
+		text-decoration: none;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
 
 	.site-main & {
 		margin: 0 0 1.5em;
@@ -269,7 +279,75 @@
 		width: 50%;
 	}
 }
+.post-nav-box {
+    padding: 1.5em 0;
+    margin-bottom: 3em;
+    border-top: hsl(0, 0%, 80%) solid 1px;
+    border-bottom: hsl(0, 0%, 80%) solid 1px; 
+}
+@media screen and (max-width: 1159px) {
+.site-main .comment-navigation,
+.site-main .paging-navitaion,
+.site-main .post-navigation, 
 
+ {
+	position: relative;
+	padding: 1em 1em;
+	margin: 0 auto 2em auto;
+
+}
+}
+
+.nav-previous > h1, 
+.nav-next > h1 {
+	font-size: 1em; 
+	& a {
+		text-decoration: none;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+.site-main .comment-navigation,
+.site-main .paging-navigation,
+.site-main .post-navigation {
+    font-size: 18px;
+    // font-size: 1.8rem;
+    font-family: 'Lato', sans-serif;
+    color: #000;
+}
+.comment-navigation .nav-previous,
+.paging-navigation .nav-previous,
+.post-navigation .nav-previous {
+	width: 50%;
+    float: left;
+    padding-right: 15%;
+}
+.comment-navigation .nav-next,
+.paging-navigation .nav-next,
+.post-navigation .nav-next {
+    width: 50%;	
+    float: right;
+    padding-left: 15%;
+	text-align: right;
+}
+.comment-navigation {
+    padding: 1em 0;
+    margin: 3em 0;
+    border-top: hsl(0, 0%, 80%) solid 1px;
+    border-bottom: hsl(0, 0%, 80%) solid 1px;  
+}
+.comment-navigation i {
+    margin: 0 1em;
+}
+.nav-indicator { 
+    margin-bottom: 0.2em; 
+}
+
+.nav-previous h1,
+.nav-next h1 { 
+    font-weight: 900; 
+}
 /* Social Menu */
 
 .menu-social ul {

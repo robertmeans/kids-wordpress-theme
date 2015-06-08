@@ -26,23 +26,18 @@ if ( post_password_required() ) {
 		<h2 class="comments-title">
 			<?php
 				printf( // WPCS: XSS OK.
-					esc_html( _nx( 'One thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', get_comments_number(), 'comments title', 'stanton-and-meredith' ) ),
-					number_format_i18n( get_comments_number() ),
-					'<span>' . get_the_title() . '</span>'
+					esc_html( _nx( 'One comment: ', '%1$s comments: ', get_comments_number(), 'comments title', 'stanton-and-meredith' ) ),
+					number_format_i18n( get_comments_number() )
 				);
 			?>
 		</h2>
 
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // Are there comments to navigate through? ?>
-		<nav id="comment-nav-above" class="navigation comment-navigation" role="navigation">
-			<h2 class="screen-reader-text"><?php esc_html_e( 'Comment navigation', 'stanton-and-meredith' ); ?></h2>
-			<div class="nav-links">
-
-				<div class="nav-previous"><?php previous_comments_link( esc_html__( 'Older Comments', 'stanton-and-meredith' ) ); ?></div>
-				<div class="nav-next"><?php next_comments_link( esc_html__( 'Newer Comments', 'stanton-and-meredith' ) ); ?></div>
-
-			</div><!-- .nav-links -->
-		</nav><!-- #comment-nav-above -->
+			<nav id="comment-nav-below" class="comment-navigation clear" role="navigation">
+			    <h1 class="screen-reader-text"><?php _e( 'Comment navigation', 'stanton-and-meredith' ); ?></h1>
+			    <div class="nav-previous"><?php previous_comments_link( __( '<i class="fa fa-arrow-circle-o-left"></i> Older Comments', 'stanton-and-meredith' ) ); ?></div>
+			    <div class="nav-next"><?php next_comments_link( __( 'Newer Comments <i class="fa fa-arrow-circle-o-right"></i>', 'stanton-and-meredith' ) ); ?></div>
+			</nav><!-- #comment-nav-below -->
 		<?php endif; // Check for comment navigation. ?>
 
 		<ol class="comment-list">
@@ -50,20 +45,17 @@ if ( post_password_required() ) {
 				wp_list_comments( array(
 					'style'      => 'ol',
 					'short_ping' => true,
+					'avatar_size' => 50,
 				) );
 			?>
 		</ol><!-- .comment-list -->
 
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // Are there comments to navigate through? ?>
-		<nav id="comment-nav-below" class="navigation comment-navigation" role="navigation">
-			<h2 class="screen-reader-text"><?php esc_html_e( 'Comment navigation', 'stanton-and-meredith' ); ?></h2>
-			<div class="nav-links">
-
-				<div class="nav-previous"><?php previous_comments_link( esc_html__( 'Older Comments', 'stanton-and-meredith' ) ); ?></div>
-				<div class="nav-next"><?php next_comments_link( esc_html__( 'Newer Comments', 'stanton-and-meredith' ) ); ?></div>
-
-			</div><!-- .nav-links -->
-		</nav><!-- #comment-nav-below -->
+			<nav id="comment-nav-below" class="comment-navigation clear" role="navigation">
+			    <h1 class="screen-reader-text"><?php _e( 'Comment navigation', 'stanton-and-meredith' ); ?></h1>
+			    <div class="nav-previous"><?php previous_comments_link( __( '<i class="fa fa-arrow-circle-o-left"></i> Older Comments', 'stanton-and-meredith' ) ); ?></div>
+			    <div class="nav-next"><?php next_comments_link( __( 'Newer Comments <i class="fa fa-arrow-circle-o-right"></i>', 'stanton-and-meredith' ) ); ?></div>
+			</nav><!-- #comment-nav-below -->
 		<?php endif; // Check for comment navigation. ?>
 
 	<?php endif; // Check for have_comments(). ?>

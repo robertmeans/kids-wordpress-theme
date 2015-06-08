@@ -8,6 +8,15 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
+	<?php 
+    if (has_post_thumbnail()) {
+        echo '<div class="single-post-thumbnail clear">';
+        echo the_post_thumbnail('large-thumb');
+        echo '</div>';
+    	}
+	?>
+
 	<header class="entry-header">
 
 		<?php
@@ -31,6 +40,8 @@
 			        comments_popup_link( __( 'Leave a comment', 'stanton-and-meredith' ), __( '1 Comment', 'stanton-and-meredith' ), __( '% Comments', 'stanton-and-meredith' ) );
 			        echo '</span>';
 			    }
+
+			    edit_post_link( esc_html__( 'Edit', 'stanton-and-meredith' ), '<span class="edit-link">', '</span>' );
 			?>
 
 		</div><!-- .entry-meta -->
