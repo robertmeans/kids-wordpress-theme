@@ -33,7 +33,7 @@ get_header(); ?>
 
 			<?php endwhile; ?>
 
-			<?php the_posts_navigation(); ?>
+			<?php stanton_and_meredith_pagination(); ?>
 
 		<?php else : ?>
 

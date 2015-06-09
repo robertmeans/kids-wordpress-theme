@@ -16,10 +16,8 @@ figure {
 .gallery-caption {
     padding: 0.8075em 1em;
     font-size: 14px;
-    font-size: 1.4rem;
     font-family: 'Lato', sans-serif;
     background: #e5e5e5;
-    background: hsl(0, 0%, 90%);
 }
 .site-main .gallery {
 	margin-bottom: 1.5em;
@@ -57,4 +55,29 @@ figure {
     display: block;
     margin: 0 auto;
     border: none;
+}
+
+.front-index-thumbnail {
+    margin-bottom: -3.2em;
+}
+
+@media screen and (max-width: 779px){
+    .front-index-thumbnail {
+        margin-bottom: 0;
+    }
+}
+.single-post-thumbnail img,
+.front-index-thumbnail img {
+    display: block;
+    margin: 0 auto;
+}
+
+.has-thumbnail {
+    position: relative;
+    margin-top: -8em;
+}
+
+.small-index-thumbnail { 
+    margin-top: -1em;
+    // margin-bottom: 1em;
 }
