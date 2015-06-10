@@ -48,13 +48,13 @@ input[type="search"] {
     background: $color__search-toggle-hover;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 820px) {
     .search-toggle {
         position: absolute;
         width: 39px;
         height: 39px;
         top: 0;
-        right: 0;
+        right: 19px;
         margin-right: 0;
     }
 }
