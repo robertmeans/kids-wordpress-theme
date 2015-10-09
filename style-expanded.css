@@ -51,7 +51,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /* --------- Original Styles --------- 
 // Primary Menu 
 $color__main-nav: #313131;
+$color__main-nav-text: #fff;
 $color__main-nav-hover: #4d4d4d;
+$color__main-nav-hover-txt: #fff;
 $color__main-nav-current-page-bkg: #fff;
 $color__main-nav-current-page-txt: #313131;
 $color__main-nav-current-page-ancestor: #4d4d4d;
@@ -61,8 +63,10 @@ $color__dropdown-current-page-ancestor-bkg: #313131;
 $color__dropdown-current-page-ancestor-txt: #fff;
 // small screen nav
 $color__menu-toggle: #313131;
+$color__menu-toggle-txt: #fff;
 $color__menu-toggle-border: #313131;
 $color__menu-toggle-hover: #4d4d4d;
+$color__menu-toggle-hover-txt: #fff;
 $color__small-menu-item: #313131;
 $color__small-menu-hover: #4d4d4d;
 $color__small-menu-current-page-bkg: #4d4d4d;
@@ -104,10 +108,77 @@ $color__calendar-footer-bkg: #313131;
 $color__calendar-footer-month-bkg: #313131;
 $color__calendar-footer-month-txt: #fff;
 $color__calendar-footer-month-bkg-hover: #fefefe;
-$color__calendar-footer-month-txt-hover: #313131;;
+$color__calendar-footer-month-txt-hover: #313131;
+
+// footer
+$color__footer-bkg: #313131;
 
 */
 /* --------- Stanton's CSS --------- */
+/* --------- Meredith's CSS --------- 
+// Primary Menu 
+$color__main-nav: #18FD90;
+$color__main-nav-text: #063E23;
+$color__main-nav-hover: #0AE63F;
+$color__main-nav-hover-txt: #B01600;
+$color__main-nav-current-page-bkg: #fff;
+$color__main-nav-current-page-txt: #313131;
+$color__main-nav-current-page-ancestor: #08B060;
+$color__main-nav-dropdown: #0AE63F;
+$color__main-nav-dropdown-hover: #18FD90;
+$color__dropdown-current-page-ancestor-bkg: #0C7D47;
+$color__dropdown-current-page-ancestor-txt: #fff;
+// small screen nav
+$color__menu-toggle: #18FD90;
+$color__menu-toggle-txt: #0c7d47;
+$color__menu-toggle-border: #ee750a;
+$color__menu-toggle-hover: #0C7D47;
+$color__menu-toggle-hover-txt: #fff;
+$color__small-menu-item: #0000ff;
+$color__small-menu-hover: #0b0b9a;
+$color__small-menu-current-page-bkg: #0b0b9a;
+$color__small-menu-current-page-txt: #fff;
+$color__small-menu-current-page-parent-bkg: inherit;
+$color__small-menu-current-page-parent-txt: inherit;
+$color__small-menu-item-ancestor-hover: #0b0b9a;
+$color__small-menu-current-page-ancestor: #ee750a;
+
+// search
+$color__search-box: #24e9fb;
+$color__search-toggle-hover: #24e9fb;
+
+// widgets
+$color__widget-title: #0265FF;
+$color__widget-title-border-bottom-color: #0265FF;
+$color__widget-link: #FE700B;
+$color__recent-entries-fontawesome-icon: #0298E7;
+$color__archive-fontawesome-icon: #0298E7;
+$color__comments-fontawesome-icon: #0298E7;
+$color__pages-fontawesome-icon: #0298E7;
+
+// comments
+$color__comment-by-post-author-bkg: #ededed;
+
+// calendar
+$color__calendar-days-of-week-bkg: #4d4d4d;
+$color__calendar-days-of-week-txt: #fff;
+$color__calendar-empty-day-pad-bkg: #6e6e6e;
+$color__calendar-odd-days-bkg: #ccc;
+$color__calendar-even-days-bkg: #e1e1e1;
+$color__calendar-day-txt: inherit;
+
+$color__calendar-dates-that-contain-posts-link: red;
+
+$color__calendar-footer-bkg: #313131;
+$color__calendar-footer-month-bkg: #313131;
+$color__calendar-footer-month-txt: #fff;
+$color__calendar-footer-month-bkg-hover: #fefefe;
+$color__calendar-footer-month-txt-hover: #313131;
+
+// footer
+$color__footer-bkg: #313131;
+$color__footer-txt: #fff;
+*/
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
@@ -672,7 +743,6 @@ a:hover, a:active {
 }
 .main-navigation li:hover > a, .main-navigation li.focus > a {
   color: #fff;
-  color: white;
   background: #ff9a49;
 }
 .main-navigation a {
@@ -681,8 +751,7 @@ a:hover, a:active {
   font-size: 12px;
   text-decoration: none;
   line-height: 1em;
-  color: white;
-  color: white;
+  color: #fff;
 }
 
 .main-navigation .current_page_item > a,
@@ -734,7 +803,7 @@ a:hover, a:active {
     font-size: 14px;
     text-decoration: none;
     line-height: 1.75em;
-    color: white;
+    color: #fff;
     text-transform: uppercase;
     background: #ee750a;
     border-color: #ee750a;
@@ -745,6 +814,7 @@ a:hover, a:active {
   }
   .menu-toggle:hover {
     background: #0b0b9a;
+    color: #fff;
     border-radius: none;
     border: none;
     font-weight: normal;

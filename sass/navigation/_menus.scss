@@ -69,8 +69,7 @@
 
 		&:hover > a,
 		&.focus > a { // main nav hover
-			color: #fff;
-		    color: hsl(0, 0%, 100%);
+			color: $color__main-nav-hover-txt;
 		    background: $color__main-nav-hover;
 		}
 	}
@@ -81,8 +80,7 @@
 	    // font-size: 1rem;
 	    text-decoration: none;
 	    line-height: 1em;
-	    color: white;
-	    color: hsl(0, 0%, 100%);
+	    color: $color__main-nav-text;
 	}
 
 }
@@ -156,7 +154,7 @@
 	        font-size: 14px;
 	        text-decoration: none;
 	        line-height: 1.75em;
-	        color: white;
+	        color: $color__menu-toggle-txt;
 	        text-transform: uppercase;
 			// reset button properties to mute
 			// the button look
@@ -168,6 +166,7 @@
 		    text-shadow: none;
 		    &:hover {
 		    	background: $color__menu-toggle-hover;
+		    	color: $color__menu-toggle-hover-txt;
 			    border-radius: none;
 			    border: none;
 			    font-weight: normal;
